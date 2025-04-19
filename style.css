@@ -2,32 +2,42 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
-h1{
+h1,h2{
     font-size: 50px;
 }
 .highlight{
-    color:darkorange;
+    color:darkorange ;
 }
 .half-width{
-    width: 40%;
-    float: left;
-    margin-left: 5%;
-    padding-left: 2%;
+ width: 40%;
+ float: left;
+ margin-left: 5%;
+ padding-left: 2%;
 }
 .half-width img{
     width: 100%;
 }
 .headside-banner{
-    background-image: url(images/top-banner.png);
+    background-image:url(images/top-banner.png);
     background-repeat: no-repeat;
 }
 section{
     height: 500px;
+    padding-bottom: 150px;
 }
-.button{
+.highlightbutton{
     text-decoration: none;
     padding: 10px 20px;
-    border-radius: 5px;
-    background-image:linear-gradient(45deg, lightsalmon, tomato) ;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, lightsalmon, tomato);
     color: aliceblue;
+}
+
+.half-width img{
+    width: 100%;
+}
+.top-banner2{
+    background-image: url(images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
 }
