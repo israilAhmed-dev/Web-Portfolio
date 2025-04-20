@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio of Israil Ahmed - Frontend Developer specializing in React, HTML, CSS">
+    <title>Israil Ahmed | Frontend Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+<style>
+      /* ===== Global Styles ===== */
+:root {
+    --primary-color: #ff7b25;
+    --secondary-color: #2c3e50;
+    --text-color: #333;
+    --light-bg: #f9f9f9;
+    --white: #ffffff;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.highlight {
+    color: var(--primary-color);
+}
+
+/* ===== Header/Hero Section ===== */
+.hero-banner {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('images/top-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+}
+
+.hero-content {
+    margin-bottom: 40px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+/* ===== Button Styles ===== */
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #ff7b25, #ff5722);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 123, 37, 0.3);
+}
+
+.cta-button.secondary {
+    background: var(--secondary-color);
+}
+
+/* ===== About Section ===== */
+.about-section {
+    padding: 80px 0;
+    background: url('images/dream-bg.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 20%;
+}
+
+.about-content {
+    margin-top: 40px;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+/* ===== Experience Section ===== */
+.experience-section {
+    padding: 80px 0;
+    background: url('images/exp-bg.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.experience-card {
+    padding: 30px;
+    border-radius: 10px;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+}
+
+.experience-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.experience-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+#frontend {
+    border-left: 5px solid;
+    border-image: linear-gradient(to bottom, #ff7b25, #ff5722) 1;
+}
+
+#learning {
+    border-left: 5px solid;
+    border-image: linear-gradient(to bottom, #3498db, #2ecc71) 1;
+}
+
+/* ===== Footer ===== */
+.main-footer {
+    background: var(--secondary-color);
+    color: var(--white);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.main-footer p {
+    font-size: 0.9rem;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .hero-banner, .about-section, .experience-section {
+        padding: 60px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section {
+        background-size: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .cta-button {
+        padding: 10px 25px;
+    }
+}
+</style>
+</head>
+<body>
+    <header class="hero-banner">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to <span class="highlight">Developer's</span> World</h1>
+                <h2>World-class professional developer</h2>
+                <p class="hero-description">
+                    I am a dedicated Frontend Web Developer with expertise in HTML, CSS, JavaScript, and React.js. I specialize in creating responsive, user-centric interfaces with clean, maintainable code.
+                </p>
+                <a class="cta-button" href="https://www.linkedin.com/in/israil-ahmed-5b54a12a5/" target="_blank">Hire Me</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/Israilportfolio.jpg" alt="Israil Ahmed - Frontend Developer" loading="lazy">
+            </div>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-image">
+                <img src="images/my-bg.jpg" alt="Israil Ahmed smiling" loading="lazy">
+            </div>
+            <div class="about-content">
+                <h2>User Demands</h2>
+                <h3>Built for Your Vision</h3>
+                <p class="about-text">
+                    I build dynamic, user-friendly, and professional-grade websites that stand out. With a focus on performance and design, I ensure a seamless experience across all devices.
+                </p>
+                <a class="cta-button secondary" href="#" target="_blank">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience-section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card" id="frontend">
+                    <h3>Frontend Craftsman</h3>
+                    <h4 class="highlight">Building Seamless Web Experiences</h4>
+                    <p>2+ years of experience in frontend development using HTML, CSS, JavaScript, React.js, and Bootstrap. Skilled in converting UI/UX designs into pixel-perfect code.</p>
+                </div>
+                <div class="experience-card" id="learning">
+                    <h3>Learning Platform</h3>
+                    <h4 class="highlight">Continuous Learning</h4>
+                    <p>Developed skills through Programming Hero, W3Schools, and Anisul Islam's tutorials. Focused on staying updated with latest web technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 Israil Ahmed. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+                                                  
+    
