@@ -5,7 +5,7 @@ body{
 h1,h2{
     font-size: 50px;
 }
-.highlight{
+.orange-highlight{
     color:darkorange ;
 }
 .half-width{
@@ -41,3 +41,27 @@ section{
     background-repeat: no-repeat;
     background-position: right;
 }
+.experience-shadow{
+    box-shadow: 10px 10px 45px;
+    height: 70%;
+}
+.top-banner3{
+    background-image: url(images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+#frontend{
+    border-left: 10px solid;
+    border-image: linear-gradient(180deg, lightsalmon, tomato);
+    border-image-slice: 1; 
+}
+#learning{
+    border-left: 10px solid;
+    border-image: linear-gradient(180deg, blue, cyan );
+    border-image-slice: 1;
+}
+footer p{
+    text-align: center;
+    font-size: 12px;
+}
+
